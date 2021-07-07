@@ -6,7 +6,9 @@
             "email": "romanberth@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "life-style-coding/container-pattern": "^1.1"
+    },
     
     "autoload": {
 

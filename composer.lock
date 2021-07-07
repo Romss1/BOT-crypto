@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f5079e6013cfec45b07e7ec3dd015972",
+    "packages": [
+        {
+            "name": "life-style-coding/container-pattern",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/niko-38500/container-pattern-php.git",
+                "reference": "a32550b48baeb112b0430f2cc7e995bed5a5e885"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/niko-38500/container-pattern-php/zipball/a32550b48baeb112b0430f2cc7e995bed5a5e885",
+                "reference": "a32550b48baeb112b0430f2cc7e995bed5a5e885",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LifeStyleCoding\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Montmayeur",
+                    "email": "nicolas.montmayeur@hotmail.fr"
+                }
+            ],
+            "description": "Injection of dependences within the typing of methods",
+            "homepage": "https://github.com/niko-38500/container-pattern-php.git",
+            "keywords": [
+                "dependencies injection",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/niko-38500/container-pattern-php/issues",
+                "source": "https://github.com/niko-38500/container-pattern-php/tree/1.1.0"
+            },
+            "time": "2021-06-06T17:58:29+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
