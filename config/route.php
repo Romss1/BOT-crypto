@@ -2,7 +2,7 @@
 
 return [
     "/" => [
-        "controller" => "home.php", 
-        "action" => "home"
+        "controller" => "HomeController",
+        "action" => "index"
     ]
 ];

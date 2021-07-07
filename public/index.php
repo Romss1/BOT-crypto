@@ -1,26 +1,22 @@
 <?php
+
 include '../vendor/autoload.php';
 use LifeStyleCoding\Container\Container;
 
 $url = filter_input(INPUT_SERVER, "PATH_INFO");
-var_dump($url);
+
 $table = require ('../config/route.php');
 
 if($url === null) {
     $url = "/";
 }
 
-foreach ($table as $urlRoad => $road):
-
+foreach ($table as $urlRoad => $param) {
     if($url === $urlRoad) {
-        include './../src/Controller/'.$road['controller'];
-        $road["action"]();
+        $class = "\\App\\Controller\\" . $param['controller'];
+        $method = $param['action'];
+        $container = new Container();
+        $instance = $container->resolve($class);
+        $container->execute($instance, $method);
     }
-
-endforeach;
-
-$class = "\\App\\Controller\\Home";
-$method = "index";
-$container = new Container();
-$instance = $container->resolve($class);
-$container->execute($instance, $method);
+}
