@@ -1,0 +1,20 @@
+{
+    "name": "romain/bot-crypto",
+    "authors": [
+        {
+            "name": "Romss1",
+            "email": "romanberth@gmail.com"
+        }
+    ],
+    "require": {},
+    
+    "autoload": {
+
+        "psr-4": {
+
+            "App\\": "src/"
+
+        }
+
+    }
+}
